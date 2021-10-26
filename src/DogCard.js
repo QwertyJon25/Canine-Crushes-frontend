@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState} from 'react';
 
 export default function DogCard({ dogData, updateDog, deleteDog }) {
     const { name, age, breed, image_url, id} = dogData;

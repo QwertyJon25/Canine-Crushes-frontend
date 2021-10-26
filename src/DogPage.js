@@ -1,6 +1,6 @@
-import React, {useEffect, useState } from 'react'
-import DogContainer from "./DogContainer";
-import NewDogForm from "./NewDogForm";
+import React, {useEffect, useState } from 'react';
+import DogContainer from './DogContainer';
+import NewDogForm from './NewDogForm';
 
 export default function DogPage() {
     const [dogs, setDogs] = useState([])

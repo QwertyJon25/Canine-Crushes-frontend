@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import DogCard from "./DogCard";
 
 export default function DogContainer({ dogs, updateDog, deleteDog }) {
