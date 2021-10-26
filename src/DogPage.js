@@ -44,9 +44,9 @@ export default function DogPage() {
     return (
         <div className="dog-page">
             <h1>Check out these fine pooches!</h1>
-            <NewDogForm addNewDog={addNewDog}/>
             <Search setSearchDogs={setSearchDogs}/>
             <DogContainer deleteDog={deleteDog} updateDog={updateDog} dogs={filteredDogs}/>
+            <NewDogForm addNewDog={addNewDog}/>
         </div>
     )
 }
