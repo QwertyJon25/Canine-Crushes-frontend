@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import About from "./About";
 import DogPage from "./DogPage";
 import NavBar from "./NavBar";
+import Header from "./Header";
 
 
 function App() {
@@ -14,8 +15,7 @@ function App() {
       <About />
       </Route>
       <Route exact page="/">
-        <About />
-        <DogPage />
+        <Header />
         </Route>
       <Route exact path="/dog-page">
       <DogPage />

@@ -27,7 +27,7 @@ export default function NavBar() {
                 Home
             </NavLink>
             <NavLink
-            qto="/about"
+            to="/about"
             exact
             style={linkStyles}
             activeStyle={{

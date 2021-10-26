@@ -36,7 +36,7 @@ export default function NewDogForm({ addNewDog }) {
 
     return (
         <div className="new-dog-form">
-            <h2>New Doggie</h2>
+            <h4>Add New Doggie</h4>
             <form onSubmit={handleSubmit}>
                 <input value={image} onChange={(e) => setImage(e.target.value)} type="text" name="image" placeholder="Dog Image"/>
                 <input value={name} onChange={(e) => setName(e.target.value)} type="text" name="name" placeholder="Dog Name"/>

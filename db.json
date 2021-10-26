@@ -1,0 +1,60 @@
+{
+  "dogs": [
+    {
+      "name": "Stephen",
+      "age": "6",
+      "breed": "pug",
+      "image_url": "https://a-z-animals.com/media/Pug-Canis-familiaris-face.jpg",
+      "id": 1
+    },
+    {
+      "name": "Good-Boy",
+      "age": "7",
+      "breed": "poodle",
+      "image_url": "https://vetstreet.brightspotcdn.com/dims4/default/b5fcb62/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F38%2Fec%2Ffd4eecbe4f57a282b707f097ef33%2Fpoodle-ap-1j99ae-645-x-380.jpg",
+      "id": 2
+    },
+    {
+      "name": "Lucy",
+      "age": "8",
+      "breed": "chihuahua",
+      "image_url": "https://s36700.pcdn.co/wp-content/uploads/2018/09/black-and-tan-chiahuahua-600x400.jpg.optimal.jpg",
+      "id": 3
+    },
+    {
+      "name": "Delilah",
+      "age": "3",
+      "breed": "chihuahua",
+      "image_url": "https://vetstreet.brightspotcdn.com/dims4/default/be808e1/2147483647/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F58%2Ff2fbb09ea011e0a2380050568d634f%2Ffile%2FChihuahua-1-645mk062111.jpg",
+      "id": 4
+    },
+    {
+      "name": "Jaeger",
+      "age": "2",
+      "breed": "pitbull",
+      "image_url": "https://img.dog-learn.com/dog-breeds/american-pit-bull-terrier/pitbull-i5-sz6.jpg",
+      "id": 5
+    },
+    {
+      "name": "Tipper",
+      "age": "5",
+      "breed": "pomeranian",
+      "image_url": "https://easyscienceforkids.com/wp-content/uploads/2019/07/Pomeranian-Dog-17-4-1-758x635.jpg",
+      "id": 6
+    },
+    {
+      "name": "Viking",
+      "age": "11",
+      "breed": "poodle",
+      "image_url": "https://www.rover.com/blog/wp-content/uploads/2019/09/Poodle-min-1.jpg",
+      "id": 7
+    },
+    {
+      "name": "Odie",
+      "age": "5",
+      "breed": "pug",
+      "image_url": "https://www.loveyourdog.com/wp-content/uploads/2020/12/Pug-Standing-on-Tree-Branch.jpg",
+      "id": 8
+    }
+  ]
+}

@@ -7,8 +7,11 @@ export default function DogPage() {
     const [dogs, setDogs] = useState([])
     const [searchDogs, setSearchDogs] = useState("")
 
+    const DATABASE_API = 'http://localhost:9292/dogs'
+    // const BASE_API = "http://localhost:4001/dogs"
+
     useEffect(() => {
-        fetch('http://localhost:9292/dogs')
+        fetch(DATABASE_API)
         .then(resp => resp.json())
         .then(dogData => setDogs(dogData))
     }, [])
