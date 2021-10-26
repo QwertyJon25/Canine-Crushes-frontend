@@ -36,12 +36,12 @@ export default function NewDogForm({ addNewDog }) {
 
     return (
         <div className="new-dog-form">
-            <h4>Add New Doggie</h4>
+            <h4>Add A New Doggie</h4>
             <form onSubmit={handleSubmit}>
-                <input value={image} onChange={(e) => setImage(e.target.value)} type="text" name="image" placeholder="Dog Image"/>
-                <input value={name} onChange={(e) => setName(e.target.value)} type="text" name="name" placeholder="Dog Name"/>
-                <input value={age} onChange={(e) => setAge(e.target.value)} type="text" name="age" placeholder="Dog Age"/>
-                <input value={breed} onChange={(e) => setBreed(e.target.value)} type="text" name="breed" placeholder="Dog Breed"/>
+                Image: <input value={image} onChange={(e) => setImage(e.target.value)} type="text" name="image" placeholder="Dog Image"/><br/>
+                Name: <input value={name} onChange={(e) => setName(e.target.value)} type="text" name="name" placeholder="Dog Name"/><br/>
+                Age: <input value={age} onChange={(e) => setAge(e.target.value)} type="text" name="age" placeholder="Dog Age"/><br/>
+                Breed: <input value={breed} onChange={(e) => setBreed(e.target.value)} type="text" name="breed" placeholder="Dog Breed"/><br/>
                 <button type="submit">Add Doggo!</button>
             </form>
         </div>

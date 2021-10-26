@@ -14,7 +14,7 @@ function App() {
         <Route exact path="/about">
       <About />
       </Route>
-      <Route exact page="/">
+      <Route exact path="/">
         <Header />
         </Route>
       <Route exact path="/dog-page">
