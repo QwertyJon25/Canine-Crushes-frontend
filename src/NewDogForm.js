@@ -14,7 +14,7 @@ export default function NewDogForm({ addNewDog }) {
             image: image,
             name: name,
             age: age,
-            breed, breed
+            breed: breed
         }
 
         const options = {

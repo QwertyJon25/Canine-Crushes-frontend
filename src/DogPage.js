@@ -1,9 +1,11 @@
 import React, {useEffect, useState } from 'react';
 import DogContainer from './DogContainer';
 import NewDogForm from './NewDogForm';
+import Search from "./Search";
 
 export default function DogPage() {
     const [dogs, setDogs] = useState([])
+    const [searchDogs, setSearchDogs] = useState("")
 
     useEffect(() => {
         fetch('http://localhost:9292/dogs')
@@ -33,11 +35,14 @@ export default function DogPage() {
         setDogs(newArray)
     }
 
+    const filteredDogs = dogs.filter((dogObj) => dogObj.name.toLowerCase().includes(searchDogs.toLowerCase()))
+
 
     return (
         <div className="dog-page">
             <NewDogForm addNewDog={addNewDog}/>
-            <DogContainer deleteDog={deleteDog} updateDog={updateDog} dogs={dogs}/>
+            <Search setSearchDogs={setSearchDogs}/>
+            <DogContainer deleteDog={deleteDog} updateDog={updateDog} dogs={filteredDogs}/>
         </div>
     )
 }
