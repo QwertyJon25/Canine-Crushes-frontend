@@ -29,11 +29,28 @@ const deleteHandler = () => {
 
 }
 
+// const [count, setCount] = useState(0);
+
+// useEffect(() => {
+//     setCount(JSON.parse(window.localStorage.getItem('count')));
+//   }, []);
+
+//   useEffect(() => {
+//     window.localStorage.setItem('count', count);
+//   }, [count]);
+
+//   const increaseCount = () => {
+//     return setCount(count + 1);
+//   }
+//   const decreaseCount = () => {
+//     return setCount(count - 1)
+//   }
+
 
 
     return (
         <li className="dog-card">
-            <img src={image_url} alt={name}/>
+            <img src={image_url} alt={name} className="dog-card-img"/>
             <h2>{name}</h2>
             <h3>{age} years olds</h3>
             <h4>{breed}</h4>

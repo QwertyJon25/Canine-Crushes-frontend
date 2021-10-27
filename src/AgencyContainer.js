@@ -15,9 +15,11 @@ useEffect(() => {
 
     return (
         <div>
-            <h1>Hey, check out our agency's directory!</h1>
-                <button onClick={() => setShowForm(!showForm)}>What pooches do we have?</button>
-                { showForm ? <ul className="age-cards">{agencyCards}</ul> : null}
+            <h1>Hey, check out our Agency's directory!</h1>
+                { showForm ? <ul className="age-cards">{agencyCards}</ul> : <img className="agency-img" src="https://www.thesprucepets.com/thmb/AYrOH3UNNGqwwkcMOjE8BJdA9YA=/1854x1854/smart/filters:no_upscale()/pitbull-dog-breeds-4843994-hero-db6922b6c8294b45b19c07aff5865790.jpg" alt="agency-img"/>}<br/>
+                <button onClick={() => setShowForm(!showForm)} className="pooch-button" style={{backgroundColor: "#8BF5C7"}}>What pooches do we have?</button>
         </div>
     )
 }
+
+//null
