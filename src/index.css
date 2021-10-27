@@ -54,6 +54,7 @@ h1{
 
 .header-text{
   margin: 150px;
+  margin-top: 70px;
   padding: 40px;
   font-size: 25px;
   background-color: #FA6A74;
@@ -63,11 +64,18 @@ h1{
 
 .mission-text{
   margin: 150px;
+  margin-top: 70px;
   padding: 50px;
   font-size: 25px;
   background-color: #FA6A74;
   border: solid;
     border-color: black;
+}
+
+.new-dog-form{
+  background-color: #8BF5C7;
+  margin-left: 1300px;
+  position: fixed;
 }
 
 
