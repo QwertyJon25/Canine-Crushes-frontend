@@ -3,8 +3,8 @@ import React from 'react';
 export default function About() {
     return (
         <div className="about">
-            <h2>Our Mission Statement</h2>
-            <p>Mission Text</p>
+            <h1 className="mission-header">Our Mission Statement</h1>
+            <p className= "mission-text">Mission Text</p>
         </div>
     )
 }

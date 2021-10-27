@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import DogCard from "./DogCard";
 
-export default function DogContainer({ dogs, updateDog, deleteDog }) {
+export default function DogContainer({ dogs, updateDog, deleteDog, agencyName }) {
+    const { name } = agencyName;
     // const { name, age, breed, id} = dogs;
 
     // const [sortBy, setSortBy] = useState("id")
@@ -17,7 +18,7 @@ export default function DogContainer({ dogs, updateDog, deleteDog }) {
 
     // sortedListings = dog in map
 
-    const dogCards = dogs.map(dogObj => <DogCard deleteDog={deleteDog} updateDog={updateDog} key={dogObj.id} dogData={dogObj}/>)
+    const dogCards = dogs.map(dogObj => <DogCard deleteDog={deleteDog} updateDog={updateDog} key={dogObj.id} dogData={dogObj} ageName={name}/>)
 
 
     return (

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function NewDogForm({ addNewDog }) {
     const [image, setImage] = useState("")
     const [name, setName] = useState("")
-    const [age, setAge] = useState(0)
+    const [age, setAge] = useState("")
     const [breed, setBreed] = useState("")
 
 

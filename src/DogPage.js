@@ -6,12 +6,11 @@ import Search from "./Search";
 export default function DogPage() {
     const [dogs, setDogs] = useState([])
     const [searchDogs, setSearchDogs] = useState("")
+    const [agencyName, setAgencyName] = useState("")
 
-    const DATABASE_API = 'http://localhost:9292/dogs'
-    // const BASE_API = "http://localhost:4001/dogs"
 
     useEffect(() => {
-        fetch(DATABASE_API)
+        fetch('http://localhost:9292/dogs')
         .then(resp => resp.json())
         .then(dogData => setDogs(dogData))
     }, [])
@@ -38,14 +37,21 @@ export default function DogPage() {
         setDogs(newArray)
     }
 
-    const filteredDogs = dogs.filter((dogObj) => dogObj.name.toLowerCase().includes(searchDogs.toLowerCase()))
+    useEffect(() => {
+        fetch('http://localhost:9292/agencies/dogs')
+        .then(resp => resp.json())
+        .then(ageNameData => setAgencyName(ageNameData))
+    }, [])
 
+    // const filteredDogs = dogs.filter((dogObj) => dogObj.name.toLowerCase().includes(searchDogs.toLowerCase()))
+    
+    
 
     return (
         <div className="dog-page">
             <h1>Check out these fine pooches!</h1>
             <Search setSearchDogs={setSearchDogs}/>
-            <DogContainer deleteDog={deleteDog} updateDog={updateDog} dogs={filteredDogs}/>
+            <DogContainer deleteDog={deleteDog} updateDog={updateDog} dogs={dogs} agencyName={agencyName}/>
             <NewDogForm addNewDog={addNewDog}/>
         </div>
     )

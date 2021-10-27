@@ -46,6 +46,16 @@ export default function NavBar() {
             >
                 Doggies
             </NavLink>
+            <NavLink
+                to="/agency-page"
+                exact
+                style={linkStyles}
+                activeStyle={{
+                    background: "darkblue",
+                }}
+            >
+                Agency
+            </NavLink>
         </div>
     );
 }
