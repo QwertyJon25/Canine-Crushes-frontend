@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export default function DogCard({ dogData, updateDog, deleteDog, ageName }) {
     const { name, age, breed, image_url, id} = dogData;
-    // const { name } = agencyName;
+    // const { name } = ageName;
 
     const [newName, setNewName] = useState("")
     const [newAge, setNewAge] = useState("")
@@ -41,7 +41,7 @@ const deleteHandler = () => {
              {!liked ? (<button onClick={() => setLiked((prev) => !prev)}>❤️</button>) :
       (<button onClick={() => setLiked((prev) => !prev)}>🤍</button>)}
             <button onClick={() => setShowForm(!showForm)}>Edit Details</button>
-            <button onClick={deleteHandler} style={{backgroundColor: "red"}}>BYE PUPPY</button>
+            <button onClick={deleteHandler} style={{backgroundColor: "#FA6A74"}}>BYE PUPPY</button>
             { showForm ? <form onSubmit={handleUpdate}>
                 New Name: <input onChange={(e) => setNewName(e.target.value)} value={newName} placeholder="input new name" name="name" type="text" />
                 New Age: <input onChange={(e) => setNewAge(e.target.value)} value={newAge} placeholder="input new age" name="age" type="text" />

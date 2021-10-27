@@ -10,12 +10,12 @@ useEffect(() => {
         .then(resp => resp.json())
         .then(agencyData => setAgencies(agencyData))
     }, [])
-
+// console.log(agencies)
     const agencyCards = agencies.map(ageObj => <AgencyCard key={ageObj.id} ageData={ageObj}/>)
 
     return (
         <div>
-            <h1>Hey, check out our agencie's directory!</h1>
+            <h1>Hey, check out our agency's directory!</h1>
                 <button onClick={() => setShowForm(!showForm)}>What pooches do we have?</button>
                 { showForm ? <ul className="age-cards">{agencyCards}</ul> : null}
         </div>

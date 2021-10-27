@@ -7,6 +7,7 @@ const { name, age, breed, image_url } = ageData;
 
     return (
         <div className="agency-card">
+            <hr/>
             <img src={image_url} alt={name}/>
             <h4>Name: {name}</h4>
             <h4>{age} years olds</h4>
