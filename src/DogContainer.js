@@ -14,7 +14,7 @@ export default function DogContainer({ dogs, updateDog, deleteDog }) {
              return DogA.name.localeCompare(DogB.name)
          }else if (sortBy === "age"){
             return DogA.age.localeCompare(DogB.age)
-        }else if (DogA.breed === "breed"){
+        }else if (sortBy === "breed"){
             return DogA.breed.localeCompare(DogB.breed)
         }else {
             return DogA.id - DogB.id

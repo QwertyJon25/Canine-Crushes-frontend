@@ -43,7 +43,8 @@ export default function DogPage() {
     //     .then(ageNameData => setAgencyName(ageNameData))
     // }, [])
 
-    const filteredDogs = dogs.filter((dogObj) => dogObj.name.toLowerCase().includes(searchDogs.toLowerCase()))
+    // const filteredDogs = dogs?.filter((dogObj) => dogObj.name.toLowerCase().includes(searchDogs.toLowerCase()))
+     const filteredDogs = dogs?.filter((dogObj) => dogObj.name?.toLowerCase().includes(searchDogs?.toLowerCase()))
     
     
 

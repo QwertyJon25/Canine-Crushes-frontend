@@ -7,6 +7,7 @@ export default function DogCard({ dogData, updateDog, deleteDog, ageName }) {
     const [newName, setNewName] = useState("")
     const [newAge, setNewAge] = useState("")
     const [newBreed, setNewBreed] = useState("")
+    
     const [showForm, setShowForm] = useState(false)
     const [liked, setLiked] = useState(true)
 
@@ -42,9 +43,6 @@ const deleteHandler = () => {
 //   const increaseCount = () => {
 //     return setCount(count + 1);
 //   }
-//   const decreaseCount = () => {
-//     return setCount(count - 1)
-//   }
 
 
 
@@ -57,7 +55,7 @@ const deleteHandler = () => {
             <h4>Agency: {ageName}</h4>
              {!liked ? (<button onClick={() => setLiked((prev) => !prev)}>❤️</button>) :
       (<button onClick={() => setLiked((prev) => !prev)}>🤍</button>)}
-      {/* <button onClick={increaseCount}>👍🏽</button><button onclick={decreaseCount}>😢</button>: {count} */}
+      {/* <button onClick={increaseCount}>👍🏽</button>: {count} */}
             <button onClick={() => setShowForm(!showForm)} style={{backgroundColor: "#8BF5C7"}}>Edit Details</button>
             <button onClick={deleteHandler} style={{backgroundColor: "#FA6A74"}}>BYE PUPPY</button>
             { showForm ? <form onSubmit={handleUpdate}>
