@@ -57,6 +57,7 @@ const deleteHandler = () => {
             <h4>Agency: {ageName}</h4>
              {!liked ? (<button onClick={() => setLiked((prev) => !prev)}>❤️</button>) :
       (<button onClick={() => setLiked((prev) => !prev)}>🤍</button>)}
+      {/* <button onClick={increaseCount}>👍🏽</button><button onclick={decreaseCount}>😢</button>: {count} */}
             <button onClick={() => setShowForm(!showForm)} style={{backgroundColor: "#8BF5C7"}}>Edit Details</button>
             <button onClick={deleteHandler} style={{backgroundColor: "#FA6A74"}}>BYE PUPPY</button>
             { showForm ? <form onSubmit={handleUpdate}>
