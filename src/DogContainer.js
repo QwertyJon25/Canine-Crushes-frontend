@@ -29,7 +29,7 @@ export default function DogContainer({ dogs, updateDog, deleteDog }) {
 
     return (
         <div className="dog-container">
-            <button oncClick={() => setSortBy("id")}>Sort By Default</button>
+            <button onClick={() => setSortBy("id")}>Sort By Default</button>
             <button onClick={() => setSortBy("name")}>Sort By Name</button>
             <button onClick={() => setSortBy("age")}>Sort By Age</button>
             <button onClick={() => setSortBy("breed")}>Sort By Breed</button>

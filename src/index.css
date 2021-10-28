@@ -27,7 +27,7 @@ img {
     float: left;
     text-align: center;
     width: 150px;
-    height: 370px;
+    height: 450px;
   }
 
   hr {
@@ -111,4 +111,9 @@ border-color: black;
 
   .search-bar{
     margin-right:30px
+  }
+
+  .dog-card-img{
+    width: 150px;
+    height: 100px;
   }

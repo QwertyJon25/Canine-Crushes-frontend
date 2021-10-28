@@ -5,7 +5,7 @@ export default function NewDogForm({ addNewDog }) {
     const [name, setName] = useState("")
     const [age, setAge] = useState("")
     const [breed, setBreed] = useState("")
-    const [agency_id, setAgency_Id] = useState("")
+    // const [agency_id, setAgency_Id] = useState("")
 
 
     const handleSubmit = (e) => {
@@ -16,7 +16,7 @@ export default function NewDogForm({ addNewDog }) {
             name: name,
             age: age,
             breed: breed,
-            agency_id: agency_id
+            // agency_id: agency_id
         }
 
         const options = {
@@ -33,9 +33,11 @@ export default function NewDogForm({ addNewDog }) {
         setName("");
         setAge("");
         setBreed("");
-        setAgency_Id([]);
+        // setAgency_Id([]);
     })
     }
+
+    console.log(handleSubmit)
 
     return (
         <div className="new-dog-form">
